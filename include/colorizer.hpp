@@ -68,38 +68,30 @@ namespace Colorizer
         {
             case Color::Red: {
                 return red(val);
-                break;
             }
 
             case Color::Green: {
                 return green(val);
-                break;
             }
 
             case Color::Yellow: {
                 return yellow(val);
-                break;
             }
 
             case Color::Blue: {
-                
                 return blue(val);
-                break;
             }
 
             case Color::Magenta: {
                 return magenta(val);
-                break;
             }
 
             case Color::Cyan: {
                 return cyan(val);
-                break;
             }
 
             case Color::White: {
                 return white(val);
-                break;
             }
             
             default:
