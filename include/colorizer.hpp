@@ -6,17 +6,25 @@
 
 enum class Color
 {
-    Red,
-    Green,
-    Yellow,
-    Blue,
-    Magenta,
-    Cyan,
-    White,
+    Red     ,
+    Green   ,
+    Yellow  ,
+    Blue    ,
+    Magenta ,
+    Cyan    ,
+    White   ,
 };
 
 namespace Colorizer
 {
+    static const std::string Red        = "\x1B[31m";
+    static const std::string Green      = "\x1B[32m";
+    static const std::string Yellow     = "\x1B[33m";
+    static const std::string Blue       = "\x1B[34m";
+    static const std::string Magenta    = "\x1B[35m";
+    static const std::string Cyan       = "\x1B[36m";
+    static const std::string White      = "\x1B[37m";
+    static const std::string Reset      = "\033[0m";
 
     static std::string red(std::string val)
     {
@@ -35,22 +43,22 @@ namespace Colorizer
 
     static std::string blue(std::string val)
     {
-        return "\x1B[34m"+ val + "\033[0m";
+        return "\x1B[34m" + val + "\033[0m";
     }
 
     static std::string magenta(std::string val)
     {
-       return "\x1B[35m"+ val + "\033[0m";
+       return "\x1B[35m" + val + "\033[0m";
     }
 
     static std::string cyan(std::string val)
     {
-        return "\x1B[36m"+ val + "\033[0m";
+        return "\x1B[36m" + val + "\033[0m";
     }
 
     static std::string white(std::string val)
     {
-        return "\x1B[37m"+ val + "\033[0m";
+        return "\x1B[37m" + val + "\033[0m";
     }
 
     template<Color c>
@@ -59,19 +67,16 @@ namespace Colorizer
         switch (c)
         {
             case Color::Red: {
-                
                 return red(val);
                 break;
             }
 
             case Color::Green: {
-                
                 return green(val);
                 break;
             }
 
             case Color::Yellow: {
-                
                 return yellow(val);
                 break;
             }
@@ -83,19 +88,16 @@ namespace Colorizer
             }
 
             case Color::Magenta: {
-                
                 return magenta(val);
                 break;
             }
 
             case Color::Cyan: {
-                
                 return cyan(val);
                 break;
             }
 
             case Color::White: {
-                
                 return white(val);
                 break;
             }
