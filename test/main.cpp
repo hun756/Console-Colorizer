@@ -38,6 +38,23 @@ namespace App
         std::cout << Colorizer::White << "Hello World.. !" << Colorizer::Reset << '\n';
     }
 
+    void test04() {
+        std::cout << Colorizer::MarkBlue << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+        std::cout << Colorizer::MarkYellow << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+        std::cout << Colorizer::MarkGreen << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+        std::cout << Colorizer::MarkMagenta << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+        std::cout << Colorizer::MarkCyan << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+        std::cout << Colorizer::MarkRed << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+    }
+
+    void test05() {
+        std::cout << Colorizer::mark<Color::Blue>("higlighted words...!")  << " Try Something " << '\n';
+        std::cout << Colorizer::mark<Color::Yellow>("higlighted words...!") <<  " Try Something " << '\n';
+        std::cout << Colorizer::mark<Color::Green>("higlighted words...!") <<  " Try Something " << '\n';
+        std::cout << Colorizer::mark<Color::Magenta>("higlighted words...!") <<  " Try Something " << '\n';
+        std::cout << Colorizer::mark<Color::Cyan>("higlighted words...!") <<  " Try Something " << '\n';
+        std::cout << Colorizer::mark<Color::Red>("higlighted words...!") <<  " Try Something " << '\n';
+    }
 
     void testCaption(size_t testNum, std::string state) {
         std::cout << "\n========== " << 
@@ -62,6 +79,13 @@ namespace App
         test03();
         testCaption(3, "End");
 
+        testCaption(4, "Begin");
+        test04();
+        testCaption(4, "End");
+
+        testCaption(5, "Begin");
+        test05();
+        testCaption(5, "End");
     }
 
 } // namespace App

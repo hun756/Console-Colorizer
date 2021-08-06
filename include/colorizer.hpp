@@ -100,6 +100,53 @@ namespace Colorizer
         }
     }
 
+    const static std::string MarkRed        = "\x1B[41m";
+    const static std::string MarkGreen      = "\x1B[42m";
+    const static std::string MarkYellow     = "\x1B[43m";
+    const static std::string MarkBlue       = "\x1B[44m";
+    const static std::string MarkMagenta    = "\x1B[45m";
+    const static std::string MarkCyan       = "\x1B[46m";
+    const static std::string MarkWhite      = "\x1B[47m";
+
+    
+    template<Color c>
+    static std::string mark(std::string val) {
+        switch (c)
+        {
+            case Color::Blue: {
+                return MarkBlue + val + Reset;
+            }
+
+            case Color::Red: {
+                return MarkRed + val + Reset;
+            }
+
+            case Color::Green: {
+                return MarkGreen + val + Reset;
+            }
+
+            case Color::Yellow: {
+                return MarkYellow + val + Reset;
+            }
+
+            case Color::Magenta: {
+                return MarkMagenta + val + Reset;
+            }
+
+            case Color::Cyan: {
+                return MarkCyan + val + Reset;
+            }
+
+            case Color::White: {
+                return MarkWhite + val + Reset;
+            }
+
+            default: {
+                throw std::domain_error("No Color Matched :/");
+                break;
+            }
+        }
+    }
 } // namespace Colorizer
 
 #endif /* end of incldue guard : CONSOLE_COLORİZER_HPP*/
