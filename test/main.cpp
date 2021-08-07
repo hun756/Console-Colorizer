@@ -7,34 +7,34 @@ namespace App
 {   
 
     void test01() {
-        std::cout << Colorizer::blue("Hello World.. !") << '\n';
-        std::cout << Colorizer::yellow("Hello World.. !") << '\n';
-        std::cout << Colorizer::green("Hello World.. !") << '\n';
-        std::cout << Colorizer::magenta("Hello World.. !") << '\n';
-        std::cout << Colorizer::cyan("Hello World.. !") << '\n';
-        std::cout << Colorizer::red("Hello World.. !") << '\n';
-        std::cout << Colorizer::white("Hello World.. !") << '\n';
+        std::cout << Colorizer::blue("Hello World..!") << '\n';
+        std::cout << Colorizer::yellow("Hello World..!") << '\n';
+        std::cout << Colorizer::green("Hello World..!") << '\n';
+        std::cout << Colorizer::magenta("Hello World..!") << '\n';
+        std::cout << Colorizer::cyan("Hello World..!") << '\n';
+        std::cout << Colorizer::red("Hello World..!") << '\n';
+        std::cout << Colorizer::white("Hello World..!") << '\n';
     }
 
 
     void test02() {
-        std::cout << Colorizer::colorize<Color::Blue>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::Yellow>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::Green>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::Magenta>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::Cyan>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::Red>("Hello World.. !") <<'\n';
-        std::cout << Colorizer::colorize<Color::White>("Hello World.. !") <<'\n';
+        std::cout << Colorizer::colorize<Color::Blue>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::Yellow>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::Green>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::Magenta>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::Cyan>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::Red>("Hello World..!") <<'\n';
+        std::cout << Colorizer::colorize<Color::White>("Hello World..!") <<'\n';
     }
 
 
     void test03() {
-        std::cout << Colorizer::Blue << "Hello" << Colorizer::Reset << " World.. !" << '\n';
-        std::cout << Colorizer::Yellow << "Hello" << Colorizer::Reset << " World.. !" << '\n';
-        std::cout << Colorizer::Green << "Hello" << Colorizer::Reset << " World.. !" << '\n';
-        std::cout << Colorizer::Magenta << "Hello" << Colorizer::Reset << " World.. !" << '\n';
-        std::cout << Colorizer::Cyan << "Hello" << Colorizer::Reset << " World.. !" << '\n';
-        std::cout << Colorizer::Red << "Hello" << Colorizer::Reset << " World.. !" << '\n';
+        std::cout << Colorizer::Blue << "Hello" << Colorizer::Reset << " World..!" << '\n';
+        std::cout << Colorizer::Yellow << "Hello" << Colorizer::Reset << " World..!" << '\n';
+        std::cout << Colorizer::Green << "Hello" << Colorizer::Reset << " World..!" << '\n';
+        std::cout << Colorizer::Magenta << "Hello" << Colorizer::Reset << " World..!" << '\n';
+        std::cout << Colorizer::Cyan << "Hello" << Colorizer::Reset << " World..!" << '\n';
+        std::cout << Colorizer::Red << "Hello" << Colorizer::Reset << " World..!" << '\n';
         std::cout << Colorizer::White << "Hello World.. !" << Colorizer::Reset << '\n';
     }
 
