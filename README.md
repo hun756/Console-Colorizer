@@ -56,12 +56,12 @@ Output :
 
 
 ```cpp
-std::cout << Colorizer::MarkBlue << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
-std::cout << Colorizer::MarkYellow << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
-std::cout << Colorizer::MarkGreen << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+std::cout << Colorizer::MarkBlue    << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+std::cout << Colorizer::MarkYellow  << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+std::cout << Colorizer::MarkGreen   << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
 std::cout << Colorizer::MarkMagenta << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
-std::cout << Colorizer::MarkCyan << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
-std::cout << Colorizer::MarkRed << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+std::cout << Colorizer::MarkCyan    << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
+std::cout << Colorizer::MarkRed     << "higlighted words...!" << Colorizer::Reset << " Try Something " << '\n';
 ```
 Output:
 ![mark_view](https://github.com/hun756/Console-Colorizer/blob/main/resources/mark_other.png)
